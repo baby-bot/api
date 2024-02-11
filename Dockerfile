@@ -19,6 +19,7 @@ COPY ./src ./src
 
 # Build your application
 RUN rm ./target/release/deps/myapp*
+RUN cargo check
 RUN cargo build --release
 
 # Stage 2: Creating the runtime image
