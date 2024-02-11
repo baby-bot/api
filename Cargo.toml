@@ -4,7 +4,7 @@
 # edition = "2021"
 [[bin]]
 name = "baby-bot-api"
-path = "src/my_entry_point.rs"
+path = "src/main.rs"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
