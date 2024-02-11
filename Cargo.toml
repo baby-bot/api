@@ -7,6 +7,6 @@ edition = "2021"
 
 [dependencies]
 dotenv = "0.15.0"
-openapi = { version = "1.54.0", path = "../twilio-rust" }
+openapi = { version = "1.54.0", path = "./twilio-rust" }
 tokio = { version = "1.36.0", features = ["rt", "rt-multi-thread", "macros"] }
 rocket = "0.5.0"
