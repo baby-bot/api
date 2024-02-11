@@ -2,9 +2,9 @@
 # Use the official Rust image as a builder stage
 FROM rust:latest as builder
 
-# Create a new empty shell project
-RUN USER=root cargo new --bin myapp
-WORKDIR /myapp
+# # Create a new empty shell project
+# RUN USER=root cargo new --bin myapp
+# WORKDIR /myapp
 
 # Copy your manifests
 COPY ./Cargo.toml ./Cargo.toml
@@ -18,8 +18,8 @@ RUN rm src/*.rs
 COPY ./src ./src
 
 # Build your application
-RUN rm ./target/release/deps/myapp*
-RUN cargo check
+# RUN rm ./target/release/deps/myapp*
+# RUN cargo check
 RUN cargo build --release
 
 # Stage 2: Creating the runtime image
